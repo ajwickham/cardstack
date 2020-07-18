@@ -1,35 +1,5 @@
 $(document).ready(function() {
 
-  let count1 = 0;
-  let count2 = 0;
-  let count3 = 0;
-  /*let count4 = 0;*/
-  let car1selected = 0
-  let car2selected = 0
-  let card = 0
-  let uncard=0
-  let t = 0
-  let previous = 0
-  let turn = 0  
-
-  
-
-  
-//Functions to view and select cars
- 
-//RACETRACK PAGE
-
-
-$("#red3").click(function() {  /* This places the car on the start line and initiates building the cardstack. */
-  alert("car1 is "+x+" car2 is "+y);
-  $("div.s17Arotate").addClass(x+"top");
-  document.getElementById("s17A").style.zIndex = "15";
-  $("div.s17Crotate").addClass(y+"top");
-  document.getElementById("s17C").style.zIndex = "5";
-  stackBuilder(3,1);
-}); 
-
-// These are the stack of cards functions.
 //Stackbuilder puts together the full deck of cards.  Can vary in code the number of regular to racecar icons x:y
 var cardStack = []
 const stackBuilder = function(x,y) {
@@ -46,7 +16,7 @@ const stackBuilder = function(x,y) {
   cardStack= iconStack.concat(racecarStack); 
   return cardStack 
 };
-stackBuilder(3,1)  /*This can be removed*/
+stackBuilder(3,1)  /*This can be removed in full game*/
 
 //removes a card from the remaining stack and puts it on top (end of the array)
 var unplayedCards = cardStack
@@ -60,7 +30,11 @@ const nextCard = function(array) {
 
 
 //This is the main function, what happens when you click the stack
-
+let card = 0
+let uncard=0
+let t = 0
+let previous = 0
+let turn = 0  
 $("#stack").click(function() {
   t=1-t  //determines whose turn it is
   if (t===1) {turn=1}
