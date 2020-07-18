@@ -12,10 +12,7 @@
   </head>
   <body>
     <div class="pagecontainer">
-       
-      
-
-      
+         
       <div class="stack" id="stack">
         <div class="inner-stacks">     
          
@@ -34,9 +31,23 @@
 
         </div>
       </div>
- 
-    
-    </div>
+      <div class="refactorInformation">
+        <h3 class="scale">Refactoring Goals</h3>
+        <ul class="size">
+          <li>Demonstrate use of loops and arrays</li>
+          <li>Correct random card selection</li>
+          <li>DRY code</li>
+        </ul>
+        <h3 class="scale">Success Indicators</h3>
+        <ul class="size">
+          <li>Loops and arrays used to build "Card Deck"</li>
+          <li>Array functions used to move random card to the end of the array, then select and remove end card</li>
+          <li>Previously every card was a random selection from 32 possible card choices. Now card selection is a random selection
+            from cards not previously selected</li>
+          <li>Decks with a different balance of regular and racecar icons can be built by changing two variables</li>
+          <li>Code to select random cards has reduced from 55 to 22 lines with enhanced functionality</li>  
+        </ul>
+      </div>       
     </div>
   </body>
 </html>

@@ -1,3 +1,15 @@
+.refactorInformation {
+  grid-column: 300/750;
+}
+h3.scale {
+font-size: clamp(2rem, 3vw, 4rem);
+}
+ul.size  {
+  font-size: clamp(1.25rem, 1vw, 2rem);
+}
+/*height: 45vw;  
+  text-align: left;*/
+
 
 /*Vehicle Selector Specific*/
 li.borderless { 
