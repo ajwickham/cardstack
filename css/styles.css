@@ -2,10 +2,14 @@
   grid-column: 300/750;
 }
 h3.scale {
-font-size: clamp(2rem, 3vw, 4rem);
+font-size: clamp(1rem, 3vw, 4rem);
 }
 ul.size  {
   font-size: clamp(1.25rem, 1vw, 2rem);
+}
+#remaining {
+  grid-area: 200/20/251/200;
+  font-size: clamp(1.25rem, 2vw, 2rem);
 }
 /*height: 45vw;  
   text-align: left;*/

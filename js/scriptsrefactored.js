@@ -19,7 +19,7 @@ const stackBuilder = function(x,y) {
 stackBuilder(3,1)  /*This can be removed in full game*/
 
 //removes a card from the remaining stack and puts it on top (end of the array)
-var unplayedCards = cardStack
+var unplayedCards = cardStack.slice(0);
 const nextCard = function(array) {
   let x = Math.round((Math.random()*(array.length-1)))
   let y = array[x]
@@ -53,12 +53,17 @@ $("#stack").click(function() {
   card = unplayedCards.pop() 
   $("div.flip-card-back").addClass(card);
   uncard=card;
-  
+ 
   alert("Are you ready?");/*for some reason it won't do a second flip
                           without this break here. Event bubbling? */
   $("div.flip-card-inner").addClass("flip-card");  //card is flipped  
-});
+  $("#remaining").text(unplayedCards.length+" out of "+cardStack.length+" cards remaining");
   
+  if(unplayedCards.length===0) {
+    unplayedCards = cardStack.slice(0); 
+  }
+});
+
 });//end of document 
 //22 lines of code to put random icons on cards vs 58 lines in the original 
 
