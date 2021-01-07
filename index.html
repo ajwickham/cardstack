@@ -6,7 +6,7 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.5.0.js"></script>
-    <script src="js/scriptsrefactored.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/jquery.flip.min.js"></script>
     
   </head>
@@ -22,50 +22,110 @@
         </ul>
       </div>  
       </div>
-    </nav> 
-    
-    <div class="pagecontainer">
-         
-      <div class="stack" id="stack">
-        <div class="inner-stacks">     
-         
-          <div class="previous-back-stand-in">
-          <div class="back-stand-in">
-          
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/Cardstacks/pickupcardtop.png" alt="Cardstack1" style="width:100%;height:95%;">
-            </div>
-            <div class="flip-card-back">
-            </div>
-          </div>  
+    </nav>
+        
+    <div class="score-container">
+        <div class = "g1 h1">Guesses</div>
+        <div class = "h1" id= "g2"></div>
+        <div class = "space"></div>
+        <div class = "r1 h1">Correct</div>
+        <div class = "h1" id= "r2"></div>
+    </div>
+   
+    <div class="grid-container"> 
+      <div class="stack" id="stack">       
+        <div class="flip-card-inner flip-card2" id="first">
+          <div class="flip-card-front">
           </div>
+          <div class="flip-card-back">
+            <p id="0"></p>
+          </div>
+        </div>
+      </div>  
+      <div class="stack" id="stack">       
+        <div class="flip-card-inner flip-card2" id="second">
+          <div class="flip-card-front">
+          </div>
+          <div class="flip-card-back">
+            <p id="1"></p>
+          </div>
+        </div>
+      </div>  
+      <div class="stack" id="stack">       
+        <div class="flip-card-inner flip-card2" id="third">
+          <div class="flip-card-front">
+          </div>
+          <div class="flip-card-back">
+            <p id="2"></p>
+          </div>
+        </div>
+      </div>  
+      <div class="stack" id="stack">       
+        <div class="flip-card-inner flip-card2" id="fourth">
+          <div class="flip-card-front">
+          </div>
+          <div class="flip-card-back">
+            <p id="3"></p>
+          </div>
+        </div>
+      </div>  
+      <div class="stack" id="stack">       
+        <div class="flip-card-inner flip-card2" id="fifth">
+          <div class="flip-card-front">
+          </div>
+          <div class="flip-card-back">
+            <p id="4"></p>
           </div>
         </div>
       </div>
-      <div id="remaining"> 
-      </div>
-      <div class="refactorInformation">
-        <h3 class="scale">Refactoring Goals</h3>
-        <ul class="size">
-          <li>Demonstrate use of loops and arrays</li>
-          <li>Correct random card selection</li>
-          <li>DRY code</li>
-        </ul>
-        <h3 class="scale">Success Indicators</h3>
-        <ul class="size">
-          <li>Loops and arrays used to build "Card Deck"</li>
-          <li>Array functions used to move random card to the end of the array, then select and remove end card</li>
-          <li>Previously every card was a random selection from 32 possible card choices. Now card selection is a random selection
-            from cards not previously selected</li>
-          <li>Decks with a different balance of regular and racecar icons can be built by changing two variables</li>
-          <li>Code to select random cards has reduced from 55 to 22 lines with enhanced functionality</li>  
-        </ul>
-        <h3 class="scale">
-          To make it go, click on the cards.
-        </h3>
-      </div>       
+      <div class="stack" id="stack">       
+        <div class="flip-card-inner flip-card2" id="sixth">
+          <div class="flip-card-front">
+          </div>
+          <div class="flip-card-back">
+            <p id="5"></p>
+          </div>
+        </div>
+      </div>  
+      <div class="stack" id="stack">       
+        <div class="flip-card-inner flip-card2" id="seventh">
+          <div class="flip-card-front">
+          </div>
+          <div class="flip-card-back">
+            <p id="6"></p>
+          </div>
+        </div>
+      </div>  
+      <div class="stack" id="stack">       
+        <div class="flip-card-inner flip-card2" id="eigth">
+          <div class="flip-card-front">
+          </div>
+          <div class="flip-card-back">
+            <p id="7"></p>
+          </div>
+        </div>
+      </div>  
+      <div class="stack" id="stack">       
+        <div class="flip-card-inner flip-card2" id="ninth">
+          <div class="flip-card-front">
+          </div>
+          <div class="flip-card-back">
+            <p id="8"></p>
+          </div>
+        </div>
+      </div>  
+      <div class="stack" id="stack">       
+        <div class="flip-card-inner flip-card2" id="tenth">
+          <div class="flip-card-front">
+          </div>
+          <div class="flip-card-back">
+            <p id="9"></p>
+          </div>
+        </div>
+      </div>  
     </div>
+
+
   </body>
 </html>
 
