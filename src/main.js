@@ -1,17 +1,17 @@
-import Pairallocation from './constructors.js';
+import {Pairallocation,Pairguess} from './constructors.js';
 const pairs = new Pairallocation;
 pairs.allocatePairs();
 
 
 
-function Pairguess(){
+/*function Pairguess(){
   this.guess = [];
   this.result = [];
-};
+};*/
 
 const guesses = new Pairguess;
 let count = -1;
-Pairguess.prototype.addGuess = function(position) {
+/*Pairguess.prototype.addGuess = function(position) {
   count = count +1
   this.guess.push(position);
   if(count >= 1) {
@@ -27,7 +27,7 @@ Pairguess.prototype.addGuess = function(position) {
     document.getElementById("g2").innerHTML = this.guess.length;
     
   }
-};
+};*/
 
 
 //This is the main function, what happens when you click the stack
@@ -55,7 +55,7 @@ function startTimeOut(position){
   }, 5000); 
 
 };
-
+/*
 Pairguess.prototype.correctFlip = function() {  //Program keeps missing correct cards because of time delay.  This function checks all cards every time to make sure.
   for(let k=1; k <this.guess.length; k++) {
     if((this.guess[k])!= (this.guess[k-1])) {
@@ -67,58 +67,57 @@ Pairguess.prototype.correctFlip = function() {  //Program keeps missing correct 
       }
     }
   }
-};
+};*/
 
 $(document).ready(function() {
 
   $("#first").click(function() { 
-    debugger
-    guesses.addGuess(0);
+    guesses.addGuess(0,count);
     cardFlip();
   });
   $("#second").click(function() { 
-    guesses.addGuess(1);
+    guesses.addGuess(1,count);
     cardFlip();  
   });
 
   $("#third").click(function() { 
     document.getElementById("2").innerHTML = pairs.letters[2];
-    guesses.addGuess(2);
+    guesses.addGuess(2,count);
     cardFlip();
   });
 
   $("#fourth").click(function() { 
-    guesses.addGuess(3);
+    guesses.addGuess(3,count);
     cardFlip();
   });
 
   $("#fifth").click(function() { 
-    guesses.addGuess(4);
+    guesses.addGuess(4,count);
     cardFlip();   
   });
 
   $("#sixth").click(function() { 
-    guesses.addGuess(5);
+    guesses.addGuess(5,count);
     cardFlip();
   });
 
   $("#seventh").click(function() { 
-    guesses.addGuess(6);
+    guesses.addGuess(6,count);
     cardFlip(); 
   });
 
   $("#eigth").click(function() { 
-    guesses.addGuess(7);
+    guesses.addGuess(7,count);
     cardFlip();
     });
   
   $("#ninth").click(function() { 
-    guesses.addGuess(8);
+    guesses.addGuess(8,count);
     cardFlip(); 
   });
 
   $("#tenth").click(function() { 
-    guesses.addGuess(9);
+    guesses.addGuess(9,count);
     cardFlip(); 
   });
 });

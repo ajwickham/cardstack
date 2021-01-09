@@ -1,11 +1,14 @@
 
 
-export default function Pairallocation() {
+
+export function Pairallocation() {
     this.letters= [];
-    this.ordinal=["#first","#second","#third","#fourth","#fifth","#sixth","#seventh","#eigth","#ninth","#tenth"]
+    this.ordinal= ["#first","#second","#third","#fourth","#fifth","#sixth","#seventh","#eigth","#ninth","#tenth"];
   }
 
-/*export default*/ function Pairguess(){
+
+
+export function Pairguess(){
     this.guess = [];
     this.result = [];
   };
@@ -25,7 +28,7 @@ export default function Pairallocation() {
   };
  
 
-  Pairguess.prototype.addGuess = function(position) {
+  Pairguess.prototype.addGuess = function(position,count) {
     count = count +1
     this.guess.push(position);
     if(count >= 1) {
