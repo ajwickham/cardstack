@@ -1,16 +1,17 @@
-import {Pairallocation,Pairguess} from './constructors.js';
-const pairs = new Pairallocation;
+//import {Pairallocation,Pairguess} from './constructors.js';
+//const pairs = new Pairallocation;
+
+
+let pairs = new Pairallocation;
+
 pairs.allocatePairs();
-
-
 
 /*function Pairguess(){
   this.guess = [];
   this.result = [];
 };*/
 
-const guesses = new Pairguess;
-let count = -1;
+let guesses = new Pairguess;
 /*Pairguess.prototype.addGuess = function(position) {
   count = count +1
   this.guess.push(position);
@@ -51,7 +52,7 @@ function startTimeOut(position){
   timeOut = setTimeout(function(){ 
     $(position).addClass("flip-card2");
     $(position).removeClass("flip-card"); 
-    guesses.correctFlip() 
+    guesses.correctFlip(); 
   }, 5000); 
 
 };
