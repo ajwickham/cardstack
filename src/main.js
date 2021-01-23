@@ -1,3 +1,5 @@
+import {navbar,navbar-right} from './css/bootstrap/bootstrap.css'
+import './css/styles.css';
 import {Pairs} from './constructors.js';
 let pairs = new Pairs;
 
