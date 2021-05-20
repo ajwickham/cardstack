@@ -1,3 +1,4 @@
+import './css/styles.css';
 import {Pairs} from './constructors.js';
 let pairs = new Pairs;
 
