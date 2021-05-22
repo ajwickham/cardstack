@@ -19,8 +19,10 @@
      
 }
 
-.h1 {
+.hfont1 {
   color: aliceblue;
+  font: Sans-Serif;
+  font-size: xx-large;
 }
 
 .grid-container {
